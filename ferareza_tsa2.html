@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokemon</title>
+<style>
+  .center {
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="center">
+  <form action="/submit" method="POST" enctype="multipart/form-data">
+    <label for="username">National Dex: </label>
+    <input type="text" name="username" id="username"/><br /><br />
+
+    <fieldset>
+      <legend>Generation</legend>
+      <input type="radio" id="gen1" name="generation" value="Gen1">
+      <label for="gen1">Generation 1</label>
+      <input type="radio" id="gen2" name="generation" value="Gen2">
+      <label for="gen2">Generation 2</label>
+      <input type="radio" id="gen3" name="generation" value="Gen3">
+      <label for="gen3">Generation 3</label>
+      <input type="radio" id="gen5" name="generation" value="Gen5">
+      <label for="gen4">Generation 4</label>
+      <input type="radio" id="gen8" name="generation" value="Gen8">
+      <label for="gen5">Generation 5</label>
+      <input type="radio" id="gen9" name="generation" value="Gen6">
+      <label for="gen6">Generation 6  </label>
+    </fieldset>
+    <fieldset>
+      <legend>Pokemon Details</legend>
+      <label for="pokemonName">Pokemon Name:</label>
+      <input type="text" id="pokemonName" name="pokemonName"><br>
+      <label for="pokemonImage">Image:</label>
+      <input type="file" id="pokemonImage" name="pokemonImage"><br>
+      <label for="type1">Type 1:</label>
+      <input type="text" id="type1" name="type1"><br>
+      <label for="type2">Type 2:</label>
+      <input type="text" id="type2" name="type2"><br>
+      <label for="evolvesFrom">Evolves from:</label>
+      <input type="text" id="evolvesFrom" name="evolvesFrom"><br>
+      <label for="evolvesTo">Evolves to:</label>
+      <input type="text" id="evolvesTo" name="evolvesTo"><br>
+      <label for="nickname">Nickname:</label>
+      <input type="text" id="nickname" name="nickname"><br>
+      <label for="birthday">Birthday:</label>
+      <input type="text" id="birthday" name="birthday" placeholder="dd/mm/yyyy"><br>
+    </fieldset>
+    <input type="submit" value="Submit">
+    <table border="1" align="center">
+      <tr>
+        <th>National Dex</th>
+        <th>Generation</th>
+        <th>Pokemon Name</th>
+        <th>Image</th>
+        <th>Type 1</th>
+        <th>Type 2</th>
+        <th>Evolves from</th>
+        <th>Evolves to</th>
+        <th>Nickname</th>
+        <th>Birtday</th>
+      </tr>
+    <tr>
+      <td>1</td>
+      <td>Generation Z</td>
+      <td>Arcel</td>
+      <td><img src="https://attachments.office.net/owa/202312256%40fit.edu.ph/service.svc/s/GetAttachmentThumbnail?id=AAMkAGFiMmU0ODcyLTg2YTMtNDE0OS04YTE3LTFmYmQzYTQ4M2ZjOQBGAAAAAACWsVNM6EjeTLd2YkQTRFohBwCVR6XLs%2FWLRYfYmeMqngUnAAAAAAEJAACVR6XLs%2FWLRYfYmeMqngUnAACuxaM7AAABEgAQAN3UNqXdOEFMjRzTE%2FUgu14%3D&thumbnailType=2&token=eyJhbGciOiJSUzI1NiIsImtpZCI6IkU1RDJGMEY4REE5M0I2NzA5QzQzQTlFOEE2MTQzQzAzRDYyRjlBODAiLCJ0eXAiOiJKV1QiLCJ4NXQiOiI1ZEx3LU5xVHRuQ2NRNm5vcGhROEE5WXZtb0EifQ.eyJvcmlnaW4iOiJodHRwczovL291dGxvb2sub2ZmaWNlLmNvbSIsInVjIjoiZmI5Yzk2NGQxNWM4NDQxNGJjN2MwMzQwODdjZWM5NGIiLCJ2ZXIiOiJFeGNoYW5nZS5DYWxsYmFjay5WMSIsImFwcGN0eHNlbmRlciI6Ik93YURvd25sb2FkQGIwYTAyNWQ5LWNiODgtNDQwOC05YjE1LWNlNzdkNDdjMzgxMCIsImlzc3JpbmciOiJXVyIsImFwcGN0eCI6IntcIm1zZXhjaHByb3RcIjpcIm93YVwiLFwicHVpZFwiOlwiMTE1MzgwMTEyNjExOTYwMTc3MFwiLFwic2NvcGVcIjpcIk93YURvd25sb2FkXCIsXCJvaWRcIjpcIjY0OTI3OTE0LTljZjEtNDBjMi05ZDVhLTI2ZDdhYjgwZjQ4ZVwiLFwicHJpbWFyeXNpZFwiOlwiUy0xLTUtMjEtMTY5MzM5MjQ1NC0yMDcxMDg1OTA4LTI5NjEzMjA0OTgtMjk3MzUzMzlcIn0iLCJuYmYiOjE3MTUxNzUwNzEsImV4cCI6MTcxNTE3NTM3MSwiaXNzIjoiMDAwMDAwMDItMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwQGIwYTAyNWQ5LWNiODgtNDQwOC05YjE1LWNlNzdkNDdjMzgxMCIsImF1ZCI6IjAwMDAwMDAyLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMC9hdHRhY2htZW50cy5vZmZpY2UubmV0QGIwYTAyNWQ5LWNiODgtNDQwOC05YjE1LWNlNzdkNDdjMzgxMCIsImhhcHAiOiJvd2EifQ.XFGxHpQsRd2y-6KdX5wKUBMJgQaTAQFGzh6UHIqU0TcGrxzOzt5kdAMeP7O6Og-Ie01wODuDMaiVPnQAD-Ue8D5E_KHQWIv5cj49qYRf7ffzrvtEsFuQVt3bh2AU-2ZzGuE3ZxtaJHeyKSkUzRJwG1qP90VnP5iMo4xkYycSQwyB336NqS2TvLhstIER7nhJJrmIhz365_Mo7fHPMjN72owosgr8cmKH-stjUr0d9vELpB-adfNjEOSNyPBhQypQ3cSaLt2sZVBz-ku7m46t9z7kAB8Vm59hVkePdgTdu0o-fdQph7ZD4EERQ5XMvUh8MXZrBEU-a6DeOY072D-hPQ&X-OWA-CANARY=bdvoV0i63MQAAAAAAAAAADDArT9jb9wYXGG_FK_b2U9nkJp12HRA4rEjJTGW8mUSGKU_1qkJVgY.&owa=outlook.office.com&scriptVer=20240503010.15&clientId=A668FDE6DC3D47A2BB5BBF7A4425F460&animation=true "style="width:200px;height:200px;"></td>
+      <td bgcolor="blue">Enhanced Strength</td>
+        <td></td>
+        <td>Peter Parker</td>
+        <td>Spider-Man</td>
+        <td>Batman</td>
+        <td>February 25, 2005</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Generation 1</td>
+        <td>Pikachu</td>
+        <td><img src="https://www.icegif.com/wp-content/uploads/icegif-5810.gif" alt="Pikachu" style="width:200px;height:200px;"></td>
+        <td bgcolor="yellow">Electric</td>
+        <td></td>
+        <td>Pichu</td>
+        <td>Raichu</td>
+        <td>Zappy</td>
+        <td>February 27, 1996</td>       
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Generation 1</td>
+        <td>Charmander</td>
+        <td><img src="https://www.icegif.com/wp-content/uploads/2023/05/icegif-621.gif" alt="Computer man" style="width:200px;height:200px;"></td>
+        <td bgcolor="red">Fire</td>
+        <td></td>
+        <td>Tapatio</td>
+        <td>Paychui</td>
+        <td>Polly</td>
+        <td>October 27, 1996</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Generation 1</td>
+        <td>Charmeleon</td>
+        <td><img src="https://i.pinimg.com/originals/67/b9/82/67b98209c91dbb8d85e4e76a3700c6c7.gif" alt="Computer man" style="width:200px;height:200px;"></td>
+        <td bgcolor="red">Fire</td>
+        <td></td>
+        <td>Lizardo</td>
+        <td>Apple</td>
+        <td>Lemon</td>
+        <td>September 21, 1998</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Generation 1</td>
+        <td>Charizard</td>
+        <td><img src="https://www.icegif.com/wp-content/uploads/2023/02/icegif-406.gif" alt="Computer man" style="width:200px;height:200px;"></td>
+        <td bgcolor="red">Fire</td>
+        <td></td>
+        <td>Frieza</td>
+        <td>Charl</td>
+        <td>ZMax</td>
+        <td>February 27, 1999</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Generation 1</td>
+      <td>Squirtle</td>
+      <td><img src="https://i.pinimg.com/originals/d4/09/27/d4092707e1e3facc4089b4f53c071cae.gif" alt="Computer man" style="width:200px;height:200px;"></td>
+      <td bgcolor="blue">Water</td>
+      <td></td>
+      <td>Squirt</td>
+      <td>Ren</td>
+      <td>Sappy</td>
+      <td>February 27, 2001</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Generation 1</td>
+        <td>Wartotle</td>
+        <td><img src="https://i.pinimg.com/originals/21/36/4d/21364d959852b93ffec98ea9c6bc77b5.gif" alt="Computer man" style="width:200px;height:200px;"></td>
+        <td bgcolor="Blue">Water</td>
+        <td></td>
+        <td>Warty</td>
+        <td>Jeici</td>
+        <td>Petre</td>
+        <td>May 27, 1996</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Generation 1</td>
+        <td>Venusaur</td>
+        <td><img src="https://i.pinimg.com/originals/23/cd/c7/23cdc79f6ca6a4cd6936456fda1c99de.gif" alt="Computer man" style="width:200px;height:200px;"></td>
+        <td bgcolor="green">Plant</td>
+        <td></td>
+        <td>Venus</td>
+        <td>Norman</td>
+        <td>Blacky</td>
+        <td>February 27, 1996</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Generation 1</td>
+        <td>Blastoise</td>
+        <td><img src="https://i.pinimg.com/originals/84/6a/6f/846a6fc29dfe15801363d1e07b714e0c.gif" alt="Computer man" style="width:200px;height:200px;"></td>
+        <td bgcolor="blue">Water Gun</td>
+        <td></td>
+        <td>Crush</td>
+        <td>Browny</td>
+        <td>Whitye</td>
+        <td>May 2, 1956</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Generation 1</td>
+        <td>Metapod</td>
+        <td><img src="https://64.media.tumblr.com/39af59e1a47595e3f4f35d5747f28dd9/tumblr_nadw8bp5Pl1ttdkobo3_400.gif" alt="Computer man" style="width:200px;height:200px;"></td>
+        <td bgcolor="grey">Shed Skin</td>
+        <td></td>
+        <td>Cocoon</td>
+        <td>Luca</td>
+        <td>Kiwi</td>
+        <td>March 21, 2000</td>
+      </tr>
+</form>
+</body>
+</html>
