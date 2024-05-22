@@ -1,0 +1,92 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    width: calc(33.33% - 25px);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+}
+
+.card-header {
+    padding: 20px;
+}
+
+.card-header img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h2 {
+    margin: 0;
+}
+
+.card-body p {
+    margin: 10px 0;
+}
+
+.type {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 5px;
+}
+
+.type.grass {
+    background-color: #4CAF50;
+}
+
+.type.poison {
+    background-color: #9C27B0;
+}
+
+.type.fire {
+    background-color: #FF5722;
+}
+
+.type.water {
+    background-color: #2196F3;
+}
+
+.type.electric {
+    background-color: #F57C00;
+}
+
+.type.normal {
+    background-color: #bd05f5;
+}
+
+.type.fairy {
+    background-color: #FF69B4;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.add {
+    background-color: #2196F3;
+    color: white;
+}
+
+button.release {
+    background-color: #F44336;
+    color: white;
+}
