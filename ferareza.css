@@ -1,0 +1,24 @@
+h1 {
+            margin-top: 0;
+        }
+        p {
+            font-style: italic;
+            margin: 0.5em 0;
+        }
+        .highlight {
+            font-weight: bold;
+            color: darkgreen;
+        }
+        .date {
+            font-weight: bold;
+            color: red;
+        }
+        .resume {
+            font-weight: bold;
+            color: blue;
+        }
+        img {
+            margin-top: 20px;
+            width: 100px;
+            height: auto;
+        }
