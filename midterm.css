@@ -1,0 +1,232 @@
+@import url('https://images7.alphacoders.com/592/thumb-1920-592678.jpg');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s ease all;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    width: 90vw;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    background-image: url(https://logomakerr.ai/blog/wp-content/uploads/2022/10/Poke-Ball-1024x538.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box img {
+    width: 100%;
+}
+
+.box {
+    width: 256px;
+    padding: 20px;
+    color: white;
+    font-size: 4rem;
+    text-shadow: 3px 3px 3px black;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+
+.pokeball {
+    display: none;
+}
+
+.pokeball {
+    width: 32px;
+}
+
+.pokeball img {
+    width: 100%;
+}
+
+.box .name {
+    display: none;
+    
+}
+
+.box .type1, .box .type2{
+    display: none;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.charmander {
+    background-color: #F77819;
+}
+
+.jigglypuff {
+    background-color: pink;
+}
+
+.weedle {
+    background-color: indigo;
+}
+.squirtle{
+    background-color:skyblue;
+}
+
+.pikachu {
+    background-color: yellow;
+}
+
+.bullbasaur {
+    background-color: #47C67B;
+}
+
+
+.eevee {
+    background-color: #C4833D;
+}
+
+
+.meowth {
+    background-color: #EAE4C5;
+}
+
+.pidgey {
+    background-color: #E29C37;
+}
+
+.psyduck {
+    background-color: #FFD400;
+}
+
+.rattata {
+    background-color: #A962E8;
+}
+
+.snorlax {
+    background-color: #0D5C9E;
+}
+
+.grass{
+    background-color: #3FA129;
+}
+
+.poison{
+    background-color: #9141CB;
+}
+
+.bug{
+    background-color: #91A119;
+}
+
+.fire{
+    background-color: #E52829;
+}
+
+.dragon{
+    background-color: #5060E1;
+}
+
+.normal{
+    background-color: #9FA19F;
+}
+
+.fighting{
+    background-color: #FF8001;
+}
+
+.flying{
+    background-color: #81B9EF;
+}
+
+.electric{
+    background-color: #FAC001;
+
+}
+
+.water{
+    background-color: #2980EF;
+}
+
+@media (max-width: 950px) {
+    .container {
+        flex-direction: column;
+        background-position: left top;
+    }
+
+    .box {
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+    .box img {
+        width: 128px;
+    }
+
+    .box .name {
+        display: block;
+    }
+
+    .type1, .type2{
+        display: none;
+    }
+
+    .box .pokeball {
+        display: contents;
+    }
+
+    .pokeball img {
+        width: 64px;
+    }
+
+    .box .name {
+        font-size: 3rem;
+    }
+
+    .box:hover {
+
+        background-image: url(./img/bg.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .pokeball img {
+        display: none;
+    }
+
+    .box {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .box img {
+        width: 256px;
+    }
+
+    .box .name {
+        font-size: 2.5rem;
+    }
+
+    .box:hover {
+
+        background-image: url(./img/bg.jpg);
+        background-size: cover;
+        background-position: center;   
+
+    }
+}
