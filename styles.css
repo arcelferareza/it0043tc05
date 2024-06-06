@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.character {
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.character img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin: 10px 0 5px;
+}
+
+#Venti {
+    background-image: url('https://i.pinimg.com/564x/f6/aa/f9/f6aaf98bdf9ab32d59d4f7ea137f12c2.jpg');
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+}
+
+#Ayaka {
+    background-image: url('https://i.pinimg.com/736x/07/a8/07/07a807d441a0e24c861bc8ba801c335d.jpg');
+    background-color: #ffffcc;
+}
+
+#Zhongli {
+    background-image: url('https://i.pinimg.com/564x/94/2e/5c/942e5c58c22a40080192b11d063c4bad.jpg');
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+}
+
+#Yanfai {
+    background-image: url('https://i.pinimg.com/564x/f9/0a/46/f90a466b70618610242cca18f607e086.jpg');
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+#Xiao {
+    background-image: url('https://i.pinimg.com/564x/a5/53/fc/a553fc0f61b9a65c4ba6ca3741073d85.jpg');
+    background-color: #ffffff;
+}
+
+@media (min-width: 1200px) {
+    #Zhongli {
+        grid-column:3 / span 3;
+        grid-row:1 / span 3;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #Xiao {
+        grid-column: span 2;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    #Xiao {
+        grid-column: span 1;
+    }
+
+    #Zhongli {
+        grid-column: span 1;
+        grid-row: span1;
+    }
+}
