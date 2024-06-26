@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="./tsa7.css">
+    <script src="./java7.js"></script>
+</head>
+<body>
+    <div class="simulator">
+        <div class="controls">
+            <div class="control-group">
+                <label>Justify Content:</label>
+                <select id="justifyContent">
+                    <option value="flex-start">Start</option>
+                    <option value="flex-end">End</option>
+                    <option value="center">center</option>
+                    <option value="space-between">Space Between</option>
+                    <option value="space-around">Space Around</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label>Flex Wrap:</label>
+                <select id="flexWrap">
+                    <option value="nowrap">Nowrap</option>
+                    <option value="wrap">wrap</option>
+                    <option value="wrap-reverse">Wrap Reverse</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label>Align Items:</label>
+                <select id="alignItems">
+                    <option value="stretch">stretch</option>
+                    <option value="flex-start">Start</option>
+                    <option value="flex-end">End</option>
+                    <option value="center">center</option>
+                    <option value="baseline">baseline</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label>Flex Direction:</label>
+                <select id="flexDirection">
+                    <option value="row">row</option>
+                    <option value="row-reverse">Row Reverse</option>
+                    <option value="column">column</option>
+                    <option value="column-reverse">Column Reverse</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label>Align Content:</label>
+                <select id="alignContent">
+                    <option value="stretch">stretch</option>
+                    <option value="flex-start">Start</option>
+                    <option value="flex-end">End</option>
+                    <option value="center">center</option>
+                    <option value="space-between">Space Between</option>
+                    <option value="space-around">Space Around</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label>Gap Size (px):</label>
+                <input type="number" id="gapSizeInput" value="10">
+            </div>
+            <div class="control-group">
+                <label>Flex Grow Box 1:</label>
+                <input type="number" id="flexGrowInput1" value="1">
+            </div>
+            <div class="control-group">
+                <label>Flex Grow Box 2:</label>
+                <input type="number" id="flexGrowInput2" value="1">
+            </div>
+            <div class="control-group">
+                <label>Flex Grow Box 3:</label>
+                <input type="number" id="flexGrowInput3" value="1">
+            </div>
+            <button id="addBox">Add Box</button>
+            <button id="removeBox">Remove Box</button>
+            <button id="resetButton">Reset All</button>
+            <button id="growAllButton">Grow All</button>
+        </div>
+        <div class="flex-container" id="flexContainer">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+        </div>
+    </div>
+    <script src="./java7.js"></script>
+</body>
+</html>
