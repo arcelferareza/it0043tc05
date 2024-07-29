@@ -9,7 +9,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('https://images7.alphacoders.com/592/592678.jpg') no-repeat center center fixed;
+    background: url('background-image.png') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -38,7 +38,7 @@ html, body {
     transition: all 0.3s ease;
 }
 
-.grid-item img {
+.grid-item img.pokemon-icon {
     max-width: 100px;
     max-height: 100px;
     transition: all 0.3s ease;
@@ -50,14 +50,8 @@ html, body {
     color: #333;
 }
 
-.grid-item:hover {
-    background-image: url('hover-image.png');
-    background-size: cover;
-    background-position: center;
-}
-
-.grid-item:hover img {
-    transform: scale(1.1);
+.grid-item img.pokeball-icon {
+    display: none;
 }
 
 @media (max-width: 768px) {
@@ -72,8 +66,7 @@ html, body {
     .grid-item {
         flex: 1 1 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         background-color: #fff;
         padding: 10px;
@@ -82,24 +75,20 @@ html, body {
         transition: all 0.3s ease;
     }
 
-    .grid-item img {
+    .grid-item img.pokemon-icon {
         max-width: 50px;
         max-height: 50px;
     }
 
     .grid-item .pokemon-name {
-        display: inline-block;
         font-size: 1.2em;
-        margin-top: 10px;
+        margin-left: 10px;
     }
 
-    .grid-item:hover {
-        background-image: url('hover-image.png');
-        background-size: cover;
-        background-position: center;
-    }
-
-    .grid-item:hover img {
-        transform: scale(1.1);
+    .grid-item img.pokeball-icon {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin-left: auto;
     }
 }
