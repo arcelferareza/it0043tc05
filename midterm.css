@@ -9,7 +9,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('background-image.png') no-repeat center center fixed;
+    background: url('https://images7.alphacoders.com/592/592678.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
